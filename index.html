@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gửi đơn gas</title>
+  <style>
+    body { font-family: sans-serif; max-width: 500px; margin: auto; padding-top: 50px; }
+    label, input { display: block; margin-bottom: 10px; }
+  </style>
+</head>
+<body>
+  <h2>Gửi đơn gas</h2>
+  <form method="POST" action="http://123.25.70.243:5678/webhook-test/add-gas-order">
+    <label>Nhà / Khách hàng:
+      <input type="text" name="customer" required>
+    </label>
+    <label>Số lượng bình gas:
+      <input type="number" name="quantity" required>
+    </label>
+    <label>Ghi chú:
+      <input type="text" name="note">
+    </label>
+    <button type="submit">Gửi</button>
+  </form>
+</body>
+</html>
